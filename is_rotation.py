@@ -18,7 +18,7 @@
 #         split_point = s1_counter - 1
 
 def is_rotation(s1, s2):
-    if len(s1) != len(s2) || len(s1) == 0 || len(s2) == 0:
+    if len(s1) != len(s2) or len(s1) == 0 or len(s2) == 0:
         return False
     return isSubstring(s2, s1+s1)
 

@@ -5,9 +5,9 @@ def compress(test_string):
     count = 1
     for i in range(len(test_string)):
         count_char = test_string[i]
-        if i+1 == len(test_string):
-            compressed_arr.extend((count_char, str(count)))
-            count = 1
+        # if i+1 == len(test_string):
+        #     compressed_arr.extend((count_char, str(count)))
+        #     count = 1
         if i+1 == len(test_string) or count_char != test_string[i+1]:
             compressed_arr.extend((count_char, str(count)))
             count = 1
